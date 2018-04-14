@@ -1,4 +1,3 @@
-"""
 CPU temperature checker
 -------------
 
@@ -28,5 +27,3 @@ file.
 .. code:: bash
 
     $ get_average_cpu_temp 'integer value representing number of hours for which to monitor temperature of CPU'
-
-"""

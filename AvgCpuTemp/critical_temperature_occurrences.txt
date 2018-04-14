@@ -1,8 +1,0 @@
-CPU temperature hit a critically high value of 11.0 C° at 2018-04-14 17:05:07.906339
-CPU temperature hit a critically high value of 17.75 C° at 2018-04-14 17:05:09.913396
-CPU temperature hit a critically high value of 16.25 C° at 2018-04-14 17:05:10.916298
-CPU temperature hit a critically high value of 14.75 C° at 2018-04-14 17:05:11.919984
-CPU temperature hit a critically high value of 13.125 C° at 2018-04-14 17:05:12.923715
-CPU temperature hit a critically high value of 13.875 C° at 2018-04-14 17:08:11.654668
-CPU temperature hit a critically high value of 12.25 C° at 2018-04-14 17:08:12.658261
-CPU temperature hit a critically high value of 10.625 C° at 2018-04-14 17:08:13.661270

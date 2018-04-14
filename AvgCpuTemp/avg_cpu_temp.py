@@ -23,10 +23,9 @@ degree_sign = u"\u00b0"
 
 def get_current_cpu_temp():
 
-    for stamp, value_in_c in itertools.islice(zip(timestamp, sensor), 10):
+    for stamp, value_in_c in itertools.islice(zip(timestamp, sensor), 1):
         value_in_f = value_in_c * 9/5 + 32
         print("{0}, {1} C{2}, {3} F{2}".format(stamp, value_in_c, degree_sign, value_in_f))
-        time.sleep(1)
 
 
 def average_temperature(hours):
@@ -62,5 +61,5 @@ def get_average_temperature():
 
 if __name__ == '__main__':
     get_current_cpu_temp()
-    average_temperature(hours=2)
+    # average_temperature(hours=2)
 
