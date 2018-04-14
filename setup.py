@@ -21,7 +21,7 @@ If temperature went over it's upper limit and reached critical level alert
 sound will be raised and additional details will be stored in 'critical_temperature_occurrences.txt'
 file.
 
-    $ get_average_cpu_temp 'integer value representing number of hours for which to monitor temperature of CPU'
+    $ get_average_cpu_temp 'integer value representing number of hours' 'integer value representing number of minutes'
 
 """
 
@@ -29,7 +29,7 @@ file.
 from setuptools import setup
 
 setup(name='CPU-temperature-checker',
-      version='0.2',
+      version='0.3',
       description='Script for checking current CPU temperature or average temperature in given time period.',
       long_description=__doc__,
       long_description_content_type='text/markdown',

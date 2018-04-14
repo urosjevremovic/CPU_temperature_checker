@@ -3,7 +3,6 @@ import datetime
 import itertools
 import time
 import sys
-import statistics
 
 
 class Sensor:
@@ -28,10 +27,10 @@ def get_current_cpu_temp():
         print("{0}, {1} C{2}, {3} F{2}".format(stamp, value_in_c, degree_sign, value_in_f))
 
 
-def average_temperature(hours):
+def average_temperature(hours, minutes):
 
     hours = int(hours)
-    seconds = hours * 3600
+    seconds = hours * 3600 + minutes * 60
     list_of_values_in_c = []
     list_of_values_in_f = []
 
@@ -46,20 +45,20 @@ def average_temperature(hours):
         list_of_values_in_f.append(value_in_f)
         time.sleep(1)
 
-    average_temperature_in_celsius = statistics.mean(list_of_values_in_c)
-    average_temperature_in_fahrenheit = statistics.mean(list_of_values_in_f)
+    average_temperature_in_celsius = round(sum(list_of_values_in_c)/len(list_of_values_in_c),2)
+    average_temperature_in_fahrenheit = round(sum(list_of_values_in_f)/len(list_of_values_in_f),2)
 
     with open("average_cpu_temperature.txt", 'w', encoding='utf-8') as f:
 
-        f.write("Average CPU temperature in the last {0} hours was: {1} C{3} ({2} F{3})".
+        f.write("Average CPU temperature in the last {0} hours was: {1} C{3} ({2} F{3})\n".
                 format(hours, average_temperature_in_celsius, average_temperature_in_fahrenheit, degree_sign))
 
 
 def get_average_temperature():
-    average_temperature(hours=sys.argv[1])
+    average_temperature(hours=sys.argv[1], minutes=sys.argv[2])
 
 
 if __name__ == '__main__':
     get_current_cpu_temp()
-    # average_temperature(hours=2)
+    average_temperature(hours=1, minutes=30)
 
