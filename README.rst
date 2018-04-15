@@ -1,4 +1,4 @@
-CPU temperature checker
+CPU temperature monitor
 -------------
 
 Script for checking current CPU temperature or
@@ -8,7 +8,7 @@ You can get it by downloading it directly or by typing:
 
 .. code:: bash
 
-    $ pip install CPU_Temperature_Checker
+    $ pip install CPU-temperature-monitor
 
 After it is installed you can check your current temperature by running:
 

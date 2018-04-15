@@ -27,7 +27,7 @@ def get_current_cpu_temp():
         print("{0}, {1} C{2}, {3} F{2}".format(stamp, value_in_c, degree_sign, value_in_f))
 
 
-def average_temperature(hours, minutes):
+def average_temperature(hours=0, minutes=0):
 
     hours = int(hours)
     minutes = int(minutes)
