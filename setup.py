@@ -29,7 +29,7 @@ file.
 from setuptools import setup
 
 setup(name='CPU-temperature-checker',
-      version='0.3',
+      version='0.4',
       description='Script for checking current CPU temperature or average temperature in given time period.',
       long_description=__doc__,
       long_description_content_type='text/markdown',

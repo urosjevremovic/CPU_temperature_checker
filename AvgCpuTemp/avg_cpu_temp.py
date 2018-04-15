@@ -30,6 +30,7 @@ def get_current_cpu_temp():
 def average_temperature(hours, minutes):
 
     hours = int(hours)
+    minutes = int(minutes)
     seconds = hours * 3600 + minutes * 60
     list_of_values_in_c = []
     list_of_values_in_f = []
