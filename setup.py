@@ -1,5 +1,5 @@
 """
-CPU temperature checker
+CPU temperature monitor
 -------------
 
 Script for checking current CPU temperature or
@@ -7,7 +7,7 @@ average temperature in given time period.
 
 You can get it by downloading it directly or by typing:
 
-    $ pip install CPU-Temperature-Checker
+    $ pip install CPU-temperature-monitor
 
 After it is installed you can check your current temperature by running:
 
@@ -28,8 +28,8 @@ file.
 
 from setuptools import setup
 
-setup(name='CPU-temperature-checker',
-      version='0.4',
+setup(name='CPU-temperature-monitor',
+      version='0.1',
       description='Script for checking current CPU temperature or average temperature in given time period.',
       long_description=__doc__,
       long_description_content_type='text/markdown',
