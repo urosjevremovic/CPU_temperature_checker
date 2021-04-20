@@ -5,7 +5,7 @@ netifaces==0.10.6
 pkginfo==1.4.2
 pluggy==0.6.0
 psutil==5.4.5
-py==1.5.3
+py==1.10.0
 pytest==3.5.0
 pyvalid==0.9
 six==1.11.0
